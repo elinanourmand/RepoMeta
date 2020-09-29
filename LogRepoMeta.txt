@@ -1,0 +1,23 @@
+Last login: Sat Sep 26 20:29:06 on ttys002
+MacBook-Air:~ elinanourmand$ ssh enourman@146.245.252.28     
+Access to Brooklyn College computers is restricted to authorized users
+        and approved educational and research purposes, only.
+enourman@146.245.252.28's password: 
+Last login: Sat Sep 26 20:28:02 2020 from ool-4351ab8d.dyn.optonline.net
+[enourman@sol28 ~]$ git init Repo1
+Initialized empty Git repository in /users1/st/enourman/Repo1/.git/
+[enourman@sol28 ~]$ vi HelloWorld.java
+[enourman@sol28 ~]$ git add HelloWorld.java
+[enourman@sol28 ~]$ vi HelloWorld.java
+[enourman@sol28 ~]$ cat HelloWorld.java
+public class HelloWorld {
+   public static void main(String[] args) {
+             System.out.println("Hello, World");
+             System.out.println("Here is my edit: 9/29/20"); 
+  }
+ }
+[enourman@sol28 ~]$ git commit -m 'Edit- Added Date'
+[master (root-commit) 6496566] Edit- Added Date
+ 1 file changed, 5 insertions(+)
+ create mode 100644 HelloWorld.java
+
