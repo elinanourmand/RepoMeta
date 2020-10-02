@@ -1,0 +1,23 @@
+[enourman@sol28 ~]$ mkdir Repo2
+mkdir: cannot create directory ‘Repo2’: File exists
+[enourman@sol28 ~]$ mkdir RepoB
+mkdir: cannot create directory ‘RepoB’: File exists
+[enourman@sol28 ~]$ mkdir repo2
+[enourman@sol28 ~]$ cd repo2
+[enourman@sol28 repo2]$ svnadmin create .
+[enourman@sol28 repo2]$ svn co https://github.com/elinanourmand/repo2 .
+Checked out revision 0.
+[enourman@sol28 repo2]$ mkdir trunk
+[enourman@sol28 repo2]$ cd trunk
+[enourman@sol28 trunk]$ touch Test.java
+[enourman@sol28 trunk]$ vim Test.java
+[enourman@sol28 trunk]$ cd ..
+[enourman@sol28 repo2]$ svn add trunk
+A         trunk
+A         trunk/Test.java
+[enourman@sol28 repo2]$ svn commit -m "Edited Test.java and commiting"
+Adding         trunk
+Adding         trunk/Test.java
+Transmitting file data .
+Committed revision 1.
+
